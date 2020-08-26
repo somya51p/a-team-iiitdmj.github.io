@@ -3,11 +3,22 @@ body {
 }
 
 .navbar-dark {
-    background: #0055ff !important;
+    background: #00ccff !important;
 }
 
 .header {
-    background: #3b7dff;
+    background: #214047;
+    font-size: 10rem;
+    color: rgb(65, 209, 149);
+    text-align: center;
+}
+
+.container-fluid.row.card {
+    margin: 50px;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+    
 }
 
 .footer {
