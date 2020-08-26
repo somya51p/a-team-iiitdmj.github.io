@@ -13,14 +13,43 @@ body {
     text-align: center;
 }
 
-.container-fluid.row.card {
-    margin: 50px;
-    padding: 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 400px;
-    
+.container .row {
+    margin: 5px;
+    padding: 5px;    
+}
+
+.container .row .card  {
+    margin: 15px;
+    padding: 5px;
 }
 
 .footer {
     background: #669aff;
 }
+
+.card {
+    position: relative;
+    height: 300px;
+    width: 257px;
+    text-align: center;
+}
+
+.card-body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, .9);
+    color: #fff;
+    visibility: hidden  ;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .5s;
+  }
+
+  .card:hover .card-body {
+    visibility: visible;
+    opacity: 1;
+  }
