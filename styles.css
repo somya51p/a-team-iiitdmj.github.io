@@ -4,13 +4,19 @@ body {
 
 .navbar-dark {
     background: #00ccff !important;
+    color: #484848;
 }
 
 .header {
-    background: #214047;
+    background: #484848;
     font-size: 10rem;
     color: rgb(65, 209, 149);
     text-align: center;
+}
+
+.header .img {
+    width: 100%;
+    height: 40rem;
 }
 
 .container .row {
