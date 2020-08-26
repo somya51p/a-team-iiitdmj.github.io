@@ -4,39 +4,37 @@ body {
 
 .navbar-dark {
     background: #00ccff !important;
-    color: #484848;
+    color: #38b6ff;
 }
 
 .header {
-    background: #484848;
+    background: #38b6ff;
     font-size: 10rem;
     color: rgb(65, 209, 149);
     text-align: center;
+    height: 100vh;
 }
 
 .header .img {
     width: 100%;
-    height: 40rem;
+    height: 90vh;
 }
 
-.container .row {
-    margin: 5px;
-    padding: 5px;    
-}
-
-.container .row .card  {
-    margin: 15px;
-    padding: 5px;
+.container .row .card {
+    margin: 50px;
+    padding: 1px;
+    border: 5px solid #38b6ff;    
 }
 
 .footer {
     background: #669aff;
+    padding: 1em;
 }
 
 .card {
     position: relative;
-    height: 300px;
-    width: 257px;
+    height: 350px;
+    width: 250px;
     text-align: center;
 }
 
@@ -46,16 +44,65 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(29, 106, 154, .9);
+    background: rgba(31, 125, 184, 0.95);
     color: #fff;
     visibility: hidden  ;
     opacity: 0;
   
     /* transition effect. not necessary */
-    transition: opacity .2s, visibility .5s;
-  }
+    transition: opacity .25s, visibility .5s;
+    /* -webkit-transition: opacity .25s ease-in-out; */
+}
 
-  .card:hover .card-body {
+.card:hover .card-body {
     visibility: visible;
     opacity: 1;
   }
+
+ .card ul a:visited {
+      color: #a8a8a8;
+  }
+
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: cornflowerblue;
+    z-index: 20000000;
+    color: rgb(64, 163, 180);
+    text-align: center;
+    line-height: 300px;
+}
+
+.splash img {
+    width: 100%;
+    height: 100vh;
+}
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: cornflowerblue;
+    z-index: -100;
+    color: darkblue;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.s;
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s, ease-in-out forwards;
+}
